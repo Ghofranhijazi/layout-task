@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+   
+} 
+
+.container{
+   height: 100vh; 
+   background-color: beige;
+   display: grid;
+   grid-template-columns: repeat(3,1fr) ;
+   grid-template-rows: 40px repeat(4, auto) 40px ;
+   gap: 5px; 
+   grid-template-areas: 
+   "nav nav nav"
+   "sec2 main main"
+   "sec3 main main"
+   "sec3 ex ex"
+   "img img post"
+   "foot foot foot"
+   ;
+   
+}
+
+.section1
+{  background-color: rgb(44, 216, 14);
+    text-align: center;
+    padding: 10px; 
+    color: white;
+   grid-area: nav;
+  
+}
+.section2
+{
+    
+    background-color:rgb(200, 200, 244);
+    text-align: center;
+    grid-area: sec2;
+    color: white;
+    padding-top: 60px;
+   
+}
+.section3
+{
+    
+    background-color:rgb(47, 70, 8);
+    text-align: center;
+    grid-area: sec3;
+    color: white;
+    padding-top: 60px;   
+}
+.main-content
+{
+
+    background-color: tan;
+    text-align: center;
+    grid-area: main;
+    color: white;
+}
+    
+    
+    
+
+.extra-content
+{
+    
+    background-color: rgb(139, 187, 143);
+    text-align: center;
+    grid-area: ex;
+    color: white;
+    padding-top: 30px;
+
+    
+}
+.related-images
+{
+    
+    background-color: steelblue;
+    text-align: center;
+    grid-area: img;
+    color: white;
+    padding-top: 60px;
+    
+}
+.related-posts
+{
+    
+    background-color: crimson;
+    text-align: center;
+    grid-area: post;
+    color: white;
+    padding-top: 60px;
+    
+}
+.footer
+{
+    
+    background-color: blue;
+    text-align: center;
+    grid-area: foot;
+    color: white;
+
+    
+}
